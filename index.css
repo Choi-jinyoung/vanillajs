@@ -1,0 +1,71 @@
+body{background-color:#000408;}
+.wrap_bg{position:absolute; top: 0; left: 0; width:100%; height: 100%; z-index: -1;}
+.bg1{ background:url(images/1.jpg); background-position: top center; background-size: cover;}
+.bg2{ background:url(images/2.jpg); background-position: top center; background-size: cover;}
+.bg3{ background:url(images/3.jpg); background-position: top center; background-size: cover;}
+.bg4{ background:url(images/4.jpg); background-position: top center; background-size: cover;}
+.bg5{ background:url(images/5.jpg); background-position: top center; background-size: cover;}
+.wrap{width:100%; padding: 20%; box-sizing: border-box; margin: 0 auto;}
+
+h1{float:left; width:100%; font-size:10em; text-align: center; color:#fff; margin:0; transition: color 0.5s ease-in-out}
+h4{float:left; width:100%; font-size:3em; text-align: center; color: #fff; margin:5% 0 0 0;}
+.clicked{color:#7f8c8d;}
+.btn{cursor: pointer;}
+
+.form, .greetings{display:none; float:left; width:100%; margin: 15px 0;}
+.form input, .js_toDoForm input{display:block; width: 100%; height: 50px; padding: 0 15px; box-sizing: border-box; font-size:24px;}
+
+.showing{display:block;}
+
+.js_toDoForm{float:left; width: 100%;}
+
+.js_toDoList{display:block; float:left; width: 100%; padding: 0; margin: 0; background: rgba(255,255,255,0.7);}
+.js_toDoList li{display: block; float: left; width: 100%; list-style: none; margin:0; padding: 10px; border-top:1px solid #999; box-sizing: border-box;}
+.js_toDoList li span{font-size: 20px; font-weight: 400; color: #212121;}
+
+.weather_box{position: absolute; top:30px; right:30px; z-index: 10; padding:10px; background: rgba(0,0,0,0.6); border-radius: 8px;}
+.js_weather{ font-size:1.5em; color:#fff;}
+
+@keyframes fadeIn{
+    from{
+        opacity: 0;
+    } to {
+        opacity: 1;
+    }
+}
+
+.bgImage{position: absolute; top: 0; left: 0; width:100%; height: 100%; z-index: -1; animation: fadeIn .5s linear;}
+
+@media screen and (max-width: 1024px){
+    h1{font-size: 6em;}
+    h4{font-size:3em;}
+    .js_weather{font-size: 1.2em;}
+
+    .form input, .js_toDoForm input{height: 44px; padding: 0 10px; font-size:22px;}
+
+    .js_toDoList li{padding:8px;}
+    .js_toDoList li span{font-size: 18px;}
+}
+
+@media screen and (max-width: 720px){
+    h1{font-size: 4em;}
+    h4{font-size: 2em;}
+    .js_weather{font-size: 0.8em;}
+
+    .form input, .js_toDoForm input{height: 40px; padding: 0 10px; font-size:18px;}
+
+    .js_toDoList li{padding:6px;}
+    .js_toDoList li span{font-size: 16px;}
+}
+
+@media screen and (max-width: 414px){
+    .wrap{padding:30% 20%;}
+    h1{font-size: 3em;}
+    h4{font-size: 1.2em;}
+    .js_weather{font-size: 0.5em;}
+
+    .form input, .js_toDoForm input{height: 32px; padding: 0 10px; font-size:14px;}
+
+    .js_toDoList li{padding:5px;}
+    .js_toDoList li span{font-size: 14px;}
+}
